@@ -8,7 +8,7 @@ module.exports = {
 };
 
 const parseString = require('xml2js').parseString;
-// return the version number from `pom.xml` file
+// return the version number from `pom.xml` file to the core
 function parseVersion() {
     let version = null;
     const pomXml = fs.readFileSync('pom.xml', 'utf8');
